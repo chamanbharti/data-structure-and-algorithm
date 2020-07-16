@@ -3,9 +3,8 @@ package design_pattern.creational.singleton;
 
 class BillPushSingleton {
 	
-	private BillPushSingleton(){
-		
-	}
+	private BillPushSingleton(){}
+	
 	private static class SingletonHelper{
 		private static final BillPushSingleton obj=new BillPushSingleton();
 	}

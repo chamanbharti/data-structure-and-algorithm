@@ -17,7 +17,9 @@ class Student implements Serializable{
 	public static Student getInstance(){
 		return Helper.obj;
 	}
-	
+	protected Object readResolve() {
+	  return getInstance();
+    }
 }
 public class Singleton9 {
 

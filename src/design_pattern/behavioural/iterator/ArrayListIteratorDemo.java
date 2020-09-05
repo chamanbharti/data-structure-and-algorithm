@@ -7,14 +7,16 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.Stack;
 import java.util.Vector;
 
 public class ArrayListIteratorDemo {
 	public static void main(String args[]){  
-		  //ArrayList<String> list=new ArrayList<String>();//Creating arraylist  
-		  //List<String> list=new LinkedList<String>();//Creating arraylist 
-		  Vector<String> list = new Vector<>();
-		  list.add("Ravi");//Adding object in arraylist   
+		  //ArrayList<String> list=new ArrayList<String>(); 
+		  //List<String> list=new LinkedList<String>();
+		  //Vector<String> list = new Vector<>();
+		  List<String> list = new Stack<>();
+		  list.add("Ravi");
 		  list.add("Vijay");  
 		  list.add("Ravi");  
 		  list.add("Ajay");  

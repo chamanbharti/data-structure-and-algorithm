@@ -62,7 +62,7 @@ public class HashMapIteratorDemo {
 			  System.out.print("("+m.getKey()+","+m.getValue()+")");
 		  }
 		  
-		  System.out.print("\n5 Iterating map using Stream of java 8 : \n");
+		  System.out.print("\n5 Using forEach() of java 8 : \n");
 		  map.forEach((key,value)->System.out.print("("+key+","+value+")"));
 
 	}	

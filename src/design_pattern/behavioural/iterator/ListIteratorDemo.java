@@ -2,18 +2,27 @@ package design_pattern.behavioural.iterator;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.ListIterator;
 
 import jdk.nashorn.internal.objects.IteratorResult;
 
 public class ListIteratorDemo {
 	public static void main(String args[]){  
-		  ArrayList<String> list=new ArrayList<String>();//Creating arraylist  
+		  //ArrayList<String> list=new ArrayList<String>();//Creating arraylist  
+		LinkedList<String> list = new LinkedList<>();
 		  list.add("Ravi");//Adding object in arraylist  
 		  list.add("Vijay");  
 		  list.add("Ravi");  
 		  list.add("Ajay");  
 		  
+		  Iterator<String> it = list.descendingIterator();
+		// Displaying list in reverse order
+		     System.out.println("Elements in Reverse Order:");
+		     while (it.hasNext()) {
+		        System.out.println(it.next());
+		     }
 		  
 		  //Traversing list through Iterator 
 		  

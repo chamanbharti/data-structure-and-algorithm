@@ -20,11 +20,5 @@ public class ZoneIdZoneDateTime {
 		ZonedDateTime zdt2 = ZonedDateTime.now(la2);
 		System.out.println(zdt2);
 	}
-	public static void m() {
-		System.out.println("m()");
-		public static void m1() {
-			System.out.println("m1()");
-		}
-	}
 
 }
